@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <h1>Formulário</h1>
+  
+<form action="/action_page.php"method="post">
+ <fieldset>
+  <legend>Dados Pessoais</legend>
+  <label for="fname">Nome:</label>
+  <input type="text" id="fname" name="fname" placeholder="Digite seu nome" required><br>
+  <label for="nasc">Data de Nascimento:</label>
+  <input type="date" id="nasc" name="nasc"><br>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+  <label for="telefone">Telefone:</label>
+  <input type="text" id="telefone" name="telefone"placeholder="Digite seu telefone" required><br> 
+  
+ </fieldset>
+
+
+<form action="/action_page.php">
+<fieldset>
+    <legend>Dados Acadêmicos</legend>
+    <form>
+        <label for="fname">Curso:</label>
+        <select name ="curso">
+            <option value="1">ADS</option>
+            <option value="2">GTI</option>
+            <option value="3">TBD</option>
+            <option value="4">TSI</option>
+        </select><br>
+    <label for="3name">Semestre:</label>
+    <input type="radio" id="primeiro" name="semestre" value="1" required checked>
+    <label for="1">1º</label>
+    <input type="radio" id="segundo" name="semestre" value="2">
+    <label for="2">2º</label>
+    <input type="radio" id="terceiro" name="semestre" value="3">
+    <label for="3">3º</label>
+    <input type="radio" id="quarto" name="semestre" value="4">
+    <label for="4">4º</label>
+    <input type="radio" id="quinto" name="semestre" value="5">
+    <label for="5">5º</label>
+        
+    </fieldset>
+    <fieldset>
+        
+            <label for ="trabalho">Trabalha? </label>
+            <input type="checkbox"><br>
+            <label for ="local">Local de trabalho :</label>
+            <input type="text" id="local" name="local" placeholder="Digite seu local de trabalho" required><br>
+            <label for ="nome">Descreva sua experiência :</label><br>
+            <textarea></textarea>
+     </fieldset>
+    <input type="submit" value="Gravar">
+    <input type="reset" value="Limpar"><br>
+    </form>
+            
+</body>
+</html>
