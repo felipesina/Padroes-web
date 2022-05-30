@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="corpo">
+        <div class="questao">
+            <h1>Questão:<span>Calcular a média de 2 notas
+            
+            <p id="media">Resultado: A média das 2 notas foi xx.</p>
+            <label for="">Nota 01:</label>
+            <input type="number" id="nota01">
+            <label for="">Nota 02:</label>
+            <input type="number" id="nota02">
+            <input type="button" onclick="medianotas()" value="Calcular">
+        </div>
+        <script>
+            function medianotas() {
+                let nota01 = document.getElementById("nota01").value;
+                let nota02 = document.getElementById("nota02").value;
+
+                let media = ((nota01*1) + (nota02*1)) /2;
+
+                if (media >= 6) {
+                    document.getElementById("media").innerHTML = `Resultado: Aprovado com ${media}.`;
+                } else {
+                    document.getElementById("media").innerHTML = `Resultado: Reprovado com ${media}.`;
+                }
+            }
+        </script>
